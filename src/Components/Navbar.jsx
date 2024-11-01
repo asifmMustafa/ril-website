@@ -43,7 +43,14 @@ const Navbar = () => {
     <>
       <nav className="md:flex hidden items-center justify-center gap-6 font-regular">
         {links.map((link, i) => (
-          <span key={i}>{link.text}</span>
+          <Link
+            className="cursor-pointer"
+            spy={true}
+            smooth={true}
+            to={link.id}
+          >
+            {link.text}
+          </Link>
         ))}
         <span className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer">
           <span className="mx-5">+880 186767 273</span>
@@ -60,7 +67,6 @@ const Navbar = () => {
                 <Link
                   className="py-2 hover:text-orange cursor-pointer text-center w-full"
                   spy={true}
-                  offset={-120}
                   smooth={true}
                   to={link.id}
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -70,7 +76,7 @@ const Navbar = () => {
                 <hr className="border-t border-gray-300 w-full" />
               </React.Fragment>
             ))}
-            <span className="w-[208px] flex items-center my-2 p-[2px] rounded-md text-white bg-[#4BA5EF] cursor-pointer">
+            <span className="w-[210px] flex items-center my-2 p-[2px] rounded-md text-white bg-[#4BA5EF] cursor-pointer">
               <span className="mx-5">+880 186767 273</span>
               <img className="w-10" src="/phone.png" />
             </span>

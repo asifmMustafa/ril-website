@@ -15,7 +15,7 @@ const TopBar = () => {
 
 const Hero = () => {
   return (
-    <div className="min-h-screen relative inter flex flex-col space-y-10 md:space-y-[60vh] m-2 md:rounded-3xl rounded-xl text-white tracking-tight bg-cover bg-[url('/image_one.png')]">
+    <div className="min-h-screen relative flex flex-col space-y-10 md:space-y-[60vh] m-2 md:rounded-3xl rounded-xl text-white tracking-tight bg-cover bg-[url('/image_one.png')]">
       <TopBar />
 
       <div className="w-full md:pb-28 md:pt-0 pt-14 flex md:flex-row flex-col">
@@ -33,9 +33,9 @@ const Hero = () => {
             <br className="hidden md:block" />
             marine industry
           </p>
-          <span className="flex items-center justify-center p-2 rounded-md bg-[#4BA5EF] cursor-pointer">
+          <span className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer">
             <span className="mx-5">Learn More</span>
-            <img className="w-6 md:w-10" src="/arrow.png" alt="Arrow" />
+            <img className="w-10" src="/arrow.png" alt="Arrow" />
           </span>
         </div>
       </div>

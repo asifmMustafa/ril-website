@@ -19,10 +19,9 @@ const Hero = () => {
       <TopBar />
 
       <div className="w-full md:pb-28 md:pt-0 pt-14 flex md:flex-row flex-col">
-        <h1 className="w-full md:w-1/2 px-4 md:px-14 md:pt-10 text-3xl md:text-6xl font-bold leading-tight">
-          Build Strategic
-          <br />
-          Alliances in Marine &<br />
+        <h1 className="w-full md:w-1/2 px-4 md:px-14 md:pt-10 text-4xl md:text-6xl font-bold leading-tight">
+          Build Strategic <br className="hidden md:block" />
+          Alliances in Marine & <br className="hidden md:block" />
           Offshore Markets.
         </h1>
         <div className="md:static absolute bottom-10 w-full md:w-1/2 px-4 pt-20 flex flex-col items-start justify-center">

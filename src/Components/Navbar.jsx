@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 
 const MenuButton = ({ onClick }) => {
@@ -18,9 +18,9 @@ const MenuButton = ({ onClick }) => {
       >
         <path
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
           d="M1 1h15M1 7h15M1 13h15"
         />
       </svg>
@@ -30,6 +30,7 @@ const MenuButton = ({ onClick }) => {
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const links = [
     { text: "About Us", id: "about" },
@@ -39,11 +40,28 @@ const Navbar = () => {
     { text: "Contact Us", id: "contact" },
   ];
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      const handleClickOutside = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+          setIsMenuOpen(false);
+        }
+      };
+
+      document.addEventListener("mousedown", handleClickOutside);
+
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }
+  }, [isMenuOpen]);
+
   return (
     <>
       <nav className="md:flex hidden items-center justify-center gap-6 font-regular">
         {links.map((link, i) => (
           <Link
+            key={i}
             className="cursor-pointer"
             spy={true}
             smooth={true}
@@ -61,7 +79,10 @@ const Navbar = () => {
       <nav className="relative md:hidden flex">
         <MenuButton onClick={() => setIsMenuOpen(!isMenuOpen)} />
         {isMenuOpen && (
-          <div className="lg:hidden absolute right-2 top-10 z-20 text-black bg-white shadow-md rounded-lg px-5 py-2 flex flex-col items-center border-[0.5px] border-gray-400">
+          <div
+            ref={menuRef}
+            className="lg:hidden absolute right-2 top-10 z-20 text-black bg-white shadow-md rounded-lg px-5 py-2 flex flex-col items-center border-[0.5px] border-gray-400"
+          >
             {links.map((link, index) => (
               <React.Fragment key={index}>
                 <Link

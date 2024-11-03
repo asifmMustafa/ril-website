@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./Components/About";
 import Careers from "./Components/Careers";
+import Contact from "./Components/Contact";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
 import Services from "./Components/Services";
@@ -25,6 +26,7 @@ const App = () => {
         />
       </div>
       <Careers />
+      <Contact />
     </div>
   );
 };

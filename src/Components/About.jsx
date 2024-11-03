@@ -4,17 +4,19 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex md:flex-row flex-col m-2 md:px-10 px-6 md:py-24 py-14"
+      className="grid grid-cols-1 md:grid-cols-12 m-2 md:px-10 px-6 md:py-24 py-14"
     >
-      <div className="md:w-[40%] w-full">
-        <span className="px-4 py-2 border-[1px] border-[#B9B9B9] rounded-3xl text-sm">
-          About
-        </span>
-        <p className="md:w-1/2 w-full my-8 text-3xl font-semibold">
-          Resilent Innovation Limited.
-        </p>
+      <div className="col-span-1 md:col-span-4">
+        <div className="sticky top-10">
+          <span className="px-4 py-2 border-[1px] border-[#B9B9B9] rounded-3xl text-sm">
+            About
+          </span>
+          <p className="md:w-2/3 w-full my-8 text-3xl font-semibold">
+            Resilent Innovation Limited.
+          </p>
+        </div>
       </div>
-      <div className="md:w-[60%] w-full flex flex-col">
+      <div className="col-span-1 md:col-span-8">
         <p className="mb-4">
           <span className="font-semibold">
             Resilient Innovations Limited (RIL)

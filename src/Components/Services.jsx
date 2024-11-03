@@ -37,17 +37,19 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="flex md:flex-row flex-col m-2 md:px-10 px-6 py-10"
+      className="grid grid-cols-1 md:grid-cols-12 m-2 md:px-10 px-6 md:py-24 py-14"
     >
-      <div className="md:w-[40%] w-full">
-        <span className="px-4 py-2 border-[1px] border-[#B9B9B9] rounded-3xl text-sm">
-          Services
-        </span>
-        <p className="md:w-1/2 w-full my-8 text-3xl font-semibold">
-          See what we actually offer.
-        </p>
+      <div className="col-span-1 md:col-span-4">
+        <div className="sticky top-10">
+          <span className="px-4 py-2 border-[1px] border-[#B9B9B9] rounded-3xl text-sm">
+            Services
+          </span>
+          <p className="md:w-1/2 w-full my-8 text-3xl font-semibold">
+            See what we actually offer.
+          </p>
+        </div>
       </div>
-      <div className="md:w-[60%] w-full grid md:grid-cols-2 grid-cols-1 gap-4">
+      <div className="col-span-1 md:col-span-8 grid md:grid-cols-2 grid-cols-1 gap-4">
         {services.map((service, i) => (
           <div
             key={i}

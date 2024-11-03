@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./Components/About";
+import Careers from "./Components/Careers";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
 import Services from "./Components/Services";
@@ -23,6 +24,7 @@ const App = () => {
           src="/image_twelve.png"
         />
       </div>
+      <Careers />
     </div>
   );
 };

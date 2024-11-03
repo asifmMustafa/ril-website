@@ -7,7 +7,7 @@ const About = () => {
       className="grid grid-cols-1 md:grid-cols-12 m-2 md:px-10 px-6 md:py-24 py-14"
     >
       <div className="col-span-1 md:col-span-4">
-        <div className="sticky top-10">
+        <div className="md:sticky md:top-10">
           <span className="px-4 py-2 border-[1px] border-[#B9B9B9] rounded-3xl text-sm">
             About
           </span>

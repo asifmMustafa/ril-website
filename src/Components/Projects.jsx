@@ -5,7 +5,7 @@ const Projects = () => {
     {
       img: "/image_five.png",
       title: "Procurement consultancy of 17 Tugboats for BIWTA",
-      category: "Boats",
+      category: "Tugboats",
     },
     {
       img: "/image_six.png",
@@ -13,12 +13,12 @@ const Projects = () => {
       category: "Polyamide, Polyester, and HMPE Ropes",
     },
     {
-      img: "/image_seven.png",
+      img: "/Deno_compressor_resized.jpg",
       title: "Representing Deno Compressors Netherlands",
       category: "Government Supply",
     },
     {
-      img: "/image_eight.png",
+      img: "/long.jpg",
       title:
         "Successful sourcing of various construction machinery for (BIWTA)",
       category: "Construction, Machinery",
@@ -41,7 +41,7 @@ const Projects = () => {
             Projects
           </span>
           <p className="md:w-1/3 w-full my-8 text-3xl font-semibold">
-            Our latest projects.
+            Recent projects.
           </p>
         </div>
       </div>
@@ -58,7 +58,7 @@ const Projects = () => {
             </div>
           </div>
         ))}
-        <div className="p-5 flex md:flex-row flex-col justify-between md:items-start items-center border-[1px] border-[#B9B9B9] rounded-xl">
+        {/* <div className="p-5 flex md:flex-row flex-col justify-between md:items-start items-center border-[1px] border-[#B9B9B9] rounded-xl">
           <p className="font-semibold text-xl md:text-start text-center md:mb-0 mb-5">
             Want to know view more?
           </p>
@@ -70,7 +70,7 @@ const Projects = () => {
               alt="Icon"
             />
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

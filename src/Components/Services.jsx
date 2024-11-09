@@ -70,7 +70,7 @@ const Services = () => {
               Want to know more about us?
             </p>
             <p className="inline-flex items-center px-3 py-1 border-[1px] border-[#B9B9B9] rounded-3xl text-sm w-auto">
-              contact@rilbd.com
+              info@irl-bd.com
               <img
                 className="w-[18px] ml-1"
                 src="/icons/icon_six.png"

@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="h-[calc(100vh-50px)] relative flex flex-col space-y-10 md:space-y-[60vh] m-2 md:rounded-3xl rounded-xl text-white tracking-tight bg-cover bg-[url('/image_one.png')]"
+      className="min-h-screen max-h-screen relative flex flex-col space-y-10 md:space-y-[60vh] m-2 md:rounded-3xl rounded-xl text-white tracking-tight bg-cover bg-[url('/image_on.jpeg')]"
     >
       <TopBar />
 

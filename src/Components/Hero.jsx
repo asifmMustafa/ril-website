@@ -22,7 +22,7 @@ const Hero = () => {
     >
       <TopBar />
 
-      <div className="w-full md:pb-28 md:pt-0 pt-14 flex md:flex-row flex-col">
+      <div className="w-full md:pt-0 pt-14 flex md:flex-row flex-col">
         <h1 className="w-full md:w-1/2 px-4 md:px-14 md:pt-10 text-4xl md:text-6xl font-bold leading-tight">
           Build Strategic <br className="hidden md:block" />
           Alliances in Marine & <br className="hidden md:block" />
@@ -40,10 +40,9 @@ const Hero = () => {
             to="services"
             spy={true}
             smooth={true}
-            duration={500}
-            className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer"
+            className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer hover:bg-[#3A8CC1] transition-colors duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
-            <span className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer">
+            <span className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] hover:bg-[#3A8CC1] transition-colors duration-300 cursor-pointer">
               <span className="mx-5">Learn More</span>
               <img className="w-10" src="/arrow.png" alt="Arrow" />
             </span>

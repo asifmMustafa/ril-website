@@ -3,28 +3,28 @@ import React from "react";
 const Projects = () => {
   const projects = [
     {
-      img: "/image_five.png",
+      img: "/tug.jpeg",
       title: "Procurement consultancy of 17 Tugboats for BIWTA",
       category: "Tugboats",
     },
     {
-      img: "/image_six.png",
+      img: "/ropes.jpg",
       title: "Mooring equipment supply to Bangladesh Navy",
       category: "Polyamide, Polyester, and HMPE Ropes",
     },
     {
-      img: "/Deno_compressor_resized.jpg",
+      img: "/Deno_compressor.jpg",
       title: "Representing Deno Compressors Netherlands",
       category: "Government Supply",
     },
     {
-      img: "/long.jpg",
+      img: "/long-arm.jpg",
       title:
         "Successful sourcing of various construction machinery for (BIWTA)",
       category: "Construction, Machinery",
     },
     {
-      img: "/image_eleven.png",
+      img: "/solar-energy-panels.jpg",
       title: "Solar on-grid and off-grid solutions for RMG clients",
       category: "Solar, Energy",
     },
@@ -49,7 +49,7 @@ const Projects = () => {
         {projects.map((project, i) => (
           <div className="relative">
             <img
-              className="rounded-xl md:h-auto h-72 object-cover mb-5"
+              className="rounded-xl w-full md:h-96 h-72 object-cover mb-5"
               src={project.img}
             />
             <div className="md:w-1/2 absolute bottom-0 left-0 bg-white p-5 m-5 rounded-2xl">

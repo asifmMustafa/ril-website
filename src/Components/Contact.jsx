@@ -12,7 +12,7 @@ const Contact = () => {
         <p className="uppercase text-[#DCDCDC] text-xs mb-2">Contact</p>
         <span className="inline-flex items-center mb-5 text-sm">
           <img className="h-5 mr-2" src="/arrow_white.png" />
-          <p className="underline">info@ril-bd.com</p>
+          <p>info@ril-bd.com</p>
         </span>
 
         <p className="uppercase text-[#DCDCDC] text-xs mb-2">Phone</p>

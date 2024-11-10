@@ -18,11 +18,11 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="h-[calc(100vh-50px)] relative flex flex-col space-y-10 md:space-y-[60vh] m-2 md:rounded-3xl rounded-xl text-white tracking-tight bg-cover bg-[url('/image_one.png')]"
+      className="min-h-screen max-h-screen relative flex flex-col space-y-10 md:space-y-[57vh] m-2 md:rounded-3xl rounded-xl text-white tracking-tight bg-cover bg-[url('/image_one.png')]"
     >
       <TopBar />
 
-      <div className="w-full md:pb-28 md:pt-0 pt-14 flex md:flex-row flex-col">
+      <div className="w-full md:pt-0 pt-14 flex md:flex-row flex-col">
         <h1 className="w-full md:w-1/2 px-4 md:px-14 md:pt-10 text-4xl md:text-6xl font-bold leading-tight">
           Build Strategic <br className="hidden md:block" />
           Alliances in Marine & <br className="hidden md:block" />
@@ -40,7 +40,6 @@ const Hero = () => {
             to="services"
             spy={true}
             smooth={true}
-            duration={500}
             className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer"
           >
             <span className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer">

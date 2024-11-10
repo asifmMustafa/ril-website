@@ -12,19 +12,19 @@ const Contact = () => {
         <p className="uppercase text-[#DCDCDC] text-xs mb-2">Contact</p>
         <span className="inline-flex items-center mb-5 text-sm">
           <img className="h-5 mr-2" src="/arrow_white.png" />
-          <p className="underline">contact@rilbd.com</p>
+          <p className="underline">info@ril-bd.com</p>
         </span>
 
         <p className="uppercase text-[#DCDCDC] text-xs mb-2">Phone</p>
         <span className="inline-flex items-center mb-5 text-sm">
-          <p className="">+880 1868772614</p>
+          <p className="">+880 1740827761</p>
         </span>
 
         <p className="uppercase text-[#DCDCDC] text-xs mb-2">Address</p>
         <span className="inline-flex items-center mb-5 text-sm">
           <p className="">
-            02/911 Street, South Tycoon, <br />
-            Jakarta, Bangladesh
+            Level 10, House 80, Road 17/A, Block E, Banani, <br />
+            Dhaka - 1213, Bangladesh
           </p>
         </span>
       </div>
@@ -49,7 +49,8 @@ const Contact = () => {
             rows={5}
             className="w-full mb-6 pb-2 border-0 border-b-[1px] border-[#DCDCDC] text-gray-700 placeholder-[#b6b3b3] focus:outline-none"
           />
-          <span className="inline-flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer">
+          {/* <span className="inline-flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer"> */}
+          <span className="inline-flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer hover:bg-[#3A8CC1] transition-colors duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
             <span className="mx-5 text-white">Submit</span>
             <img className="w-10" src="/arrow.png" alt="Arrow" />
           </span>

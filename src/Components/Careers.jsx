@@ -70,7 +70,7 @@ const Careers = () => {
             Careers
           </span>
           <p className="w-1/2 my-8 text-3xl font-semibold">
-            Want to join with us?
+            Want to work with us?
           </p>
         </div>
       </div>
@@ -108,7 +108,7 @@ const Careers = () => {
           ))}
           <div className="md:py-0 py-10 flex items-center justify-center rounded-xl bg-cover bg-[url('image_two_.png')]">
             <p className="inline-flex items-center px-3 py-1 border-[1px] border-[#B9B9B9] rounded-3xl text-sm w-auto cursor-pointer bg-white">
-              contact@rilbd.com
+              info@ril-bd.com
               <img
                 className="w-[18px] ml-1"
                 src="/icons/icon_six.png"

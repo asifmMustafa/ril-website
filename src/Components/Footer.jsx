@@ -7,18 +7,18 @@ const Footer = () => {
       <div className="flex md:flex-row flex-col">
         <div className="md:w-1/2 w-full">
           <img className="w-28 mb-10" src="/logo_.png" />
-          <p className="mb-4 font-semibold text-2xl">
+          {/* <p className="mb-4 font-semibold text-2xl">
             Feel free to <br />
             contact with us
           </p>
           <p className="inline-flex items-center px-3 py-1 border-[1px] border-[#B9B9B9] rounded-3xl text-sm w-auto">
-            contact@rilbd.com
+            info@ril-bd.com
             <img
               className="w-[18px] ml-1"
               src="/icons/icon_six.png"
               alt="Icon"
             />
-          </p>
+          </p> */}
         </div>
         <div className="md:w-1/2 w-full flex flex-row md:mt-0 mt-10">
           <div className="w-1/2">

@@ -71,7 +71,7 @@ const Navbar = () => {
           </Link>
         ))}
         <span className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer">
-          <span className="mx-5">+880 186767 273</span>
+          <span className="mx-5">+880 1740827761</span>
           <img className="w-10" src="/phone.png" />
         </span>
       </nav>

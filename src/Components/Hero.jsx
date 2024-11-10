@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import { Link } from "react-scroll";
 
 const TopBar = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="min-h-screen relative flex flex-col space-y-10 md:space-y-[60vh] m-2 md:rounded-3xl rounded-xl text-white tracking-tight bg-cover bg-[url('/image_one.png')]"
+      className="h-[calc(100vh-50px)] relative flex flex-col space-y-10 md:space-y-[60vh] m-2 md:rounded-3xl rounded-xl text-white tracking-tight bg-cover bg-[url('/image_one.png')]"
     >
       <TopBar />
 
@@ -35,10 +36,18 @@ const Hero = () => {
             <br className="hidden md:block" />
             marine industry
           </p>
-          <span className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer">
-            <span className="mx-5">Learn More</span>
-            <img className="w-10" src="/arrow.png" alt="Arrow" />
-          </span>
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer"
+          >
+            <span className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer">
+              <span className="mx-5">Learn More</span>
+              <img className="w-10" src="/arrow.png" alt="Arrow" />
+            </span>
+          </Link>
         </div>
       </div>
     </div>

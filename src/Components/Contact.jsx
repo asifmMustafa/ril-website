@@ -1,6 +1,30 @@
-import React from "react";
+import emailjs from "emailjs-com";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async () => {
+    emailjs
+      .send(
+        "service_96bpirl",
+        "template_qp0ryzx",
+        { name, email, message },
+        "YXKaNaiH0Jxb1TK0z"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Message sent!");
+        },
+        (error) => {
+          alert("Failed to send message.");
+        }
+      );
+  };
+
   return (
     <div
       id="contact"
@@ -34,12 +58,16 @@ const Contact = () => {
           <input
             type="text"
             placeholder="John Doe"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             className="w-full mb-6 pb-2 border-0 border-b-[1px] border-[#DCDCDC] text-gray-700 placeholder-[#b6b3b3] focus:outline-none"
           />
           <p className="mb-4">Email Address</p>
           <input
             type="text"
             placeholder="example@gmail.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             className="w-full mb-6 pb-2 border-0 border-b-[1px] border-[#DCDCDC] text-gray-700 placeholder-[#b6b3b3] focus:outline-none"
           />
           <p className="mb-4">Your Message</p>
@@ -47,10 +75,14 @@ const Contact = () => {
             type="text"
             placeholder="Start writing..."
             rows={5}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             className="w-full mb-6 pb-2 border-0 border-b-[1px] border-[#DCDCDC] text-gray-700 placeholder-[#b6b3b3] focus:outline-none"
           />
-          {/* <span className="inline-flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer"> */}
-          <span className="inline-flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer hover:bg-[#3A8CC1] transition-colors duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+          <span
+            onClick={() => handleSubmit()}
+            className="inline-flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer hover:bg-[#3A8CC1] transition-colors duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
             <span className="mx-5 text-white">Submit</span>
             <img className="w-10" src="/arrow.png" alt="Arrow" />
           </span>

@@ -47,7 +47,7 @@ const Projects = () => {
       </div>
       <div className="col-span-1 md:col-span-8">
         {projects.map((project, i) => (
-          <div className="relative">
+          <div className="relative" key={i}>
             <img
               className="rounded-xl w-full md:h-96 h-72 object-cover mb-5"
               src={project.img}

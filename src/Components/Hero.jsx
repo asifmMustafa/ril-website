@@ -40,9 +40,9 @@ const Hero = () => {
             to="services"
             spy={true}
             smooth={true}
-            className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer"
+            className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer hover:bg-[#3A8CC1] transition-colors duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
-            <span className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] cursor-pointer">
+            <span className="flex items-center justify-center p-[2px] rounded-md bg-[#4BA5EF] hover:bg-[#3A8CC1] transition-colors duration-300 cursor-pointer">
               <span className="mx-5">Learn More</span>
               <img className="w-10" src="/arrow.png" alt="Arrow" />
             </span>

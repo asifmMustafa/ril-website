@@ -12,7 +12,7 @@ const About = () => {
             About
           </span>
           <p className="md:w-2/3 w-full my-8 text-3xl font-semibold">
-            Resilent Innovation Limited.
+            Resilent Innovations Limited.
           </p>
         </div>
       </div>

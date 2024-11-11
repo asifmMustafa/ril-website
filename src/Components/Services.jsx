@@ -45,7 +45,7 @@ const Services = () => {
             Services
           </span>
           <p className="md:w-1/2 w-full my-8 text-3xl font-semibold">
-            See what we actually offer.
+            What We Offer.
           </p>
         </div>
       </div>

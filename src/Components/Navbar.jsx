@@ -98,7 +98,7 @@ const Navbar = () => {
               </React.Fragment>
             ))}
             <span className="w-[210px] flex items-center my-2 p-[2px] rounded-md text-white bg-[#4BA5EF] cursor-pointer">
-              <span className="mx-5">+880 186767 273</span>
+              <span className="mx-5">+880 1740827761</span>
               <img className="w-10" src="/phone.png" />
             </span>
           </div>

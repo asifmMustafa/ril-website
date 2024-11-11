@@ -69,9 +69,7 @@ const Careers = () => {
           <span className="px-4 py-2 border-[1px] border-[#B9B9B9] rounded-3xl text-sm">
             Careers
           </span>
-          <p className="w-1/2 my-8 text-3xl font-semibold">
-            Want to work with us?
-          </p>
+          <p className="w-1/2 my-8 text-3xl font-semibold">Work with Us.</p>
         </div>
       </div>
       <div className="col-span-1 md:col-span-8">
